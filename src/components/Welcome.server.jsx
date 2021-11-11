@@ -1,6 +1,8 @@
 import {useShopQuery, flattenConnection, Link} from '@shopify/hydrogen';
 import gql from 'graphql-tag';
 
+import SubTitle from './SubTitle.server'
+
 function ExternalIcon() {
   return (
     <svg
@@ -124,6 +126,7 @@ export default function Welcome() {
         <h1 className="font-extrabold mb-4 text-5xl md:text-7xl">
           Hello, Hydrogen
         </h1>
+        <SubTitle text="This is Typescript" />
         <p className="text-lg mb-8">
           Welcome to your custom storefront. Let&rsquo;s get building.
         </p>
